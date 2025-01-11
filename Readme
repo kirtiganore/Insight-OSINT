@@ -1,0 +1,145 @@
+Insight-OSINT
+
+1. Pre-Requisites
+Ensure the target PC has the necessary software installed:
+•	Python (Version 3.8 or later): 
+https://www.python.org/downloads
+•	Node.js and npm (Latest LTS version): https://nodejs.org/en/download
+
+2. Extract the ZIP File
+1.	Copy the ZIP file to the target PC.
+2.	Extract the ZIP file into a desired folder, e.g., D:\IntelScope
+
+3. Backend Setup
+Step 1: Navigate to the Backend Folder
+Open a terminal or command prompt and navigate to the backend directory:
+cd <extracted-folder>/backend
+Step 2: Create a Virtual Environment
+Set up a virtual environment to manage dependencies:
+python -m venv env
+Step 3: Activate the Virtual Environment
+•	Windows: env\Scripts\activate
+•	macOS/Linux: source env/bin/activate
+Step 4: Install Dependencies
+Install the required Python libraries using: pip install -r requirements.txt
+Step 5: Update API Keys
+1. OpenAI API Key (ChatGPT Integration)
+•	Link to Obtain API Key: OpenAI API Keys
+•	Instructions:
+o	Sign up or log in to your OpenAI account.
+o	Navigate to the "API Keys" section.
+o	Generate a new secret key and copy it.
+________________________________________
+2. Google Maps API Key (Geospatial Data)
+•	Link to Obtain API Key: Google Cloud Console
+•	Instructions:
+o	Log in with a Google account.
+o	Create a new project or use an existing one.
+o	Enable the "Maps JavaScript API" and "Places API".
+o	Generate an API key under the "Credentials" section.
+________________________________________
+3. NewsAPI (News Articles)
+•	Link to Obtain API Key: NewsAPI
+•	Instructions:
+o	Sign up for a free or paid account.
+o	Copy the API key provided in your account dashboard.
+________________________________________
+4. Reddit API (Discussions Data)
+•	Link to Obtain API Key: Reddit App Preferences
+•	Instructions:
+o	Log in to Reddit and navigate to "Create App".
+o	Choose "script" as the app type.
+o	Note the "client ID" and "client secret".
+________________________________________
+5. PyTrends API (Google Trends Data)
+•	Link: No API key is required for PyTrends.
+o	It uses a Python package to interact with Google Trends. Ensure the package is properly installed via pip install pytrends.
+________________________________________
+6. Gemini API (Market Data)
+•	Link to Obtain API Key: Gemini API
+•	Instructions:
+o	Log in to Gemini or create an account.
+o	Navigate to "API Settings" under your account.
+o	Generate a new API key and secret.
+________________________________________
+7. Semantic Scholar API (Research Papers)
+•	Link to Obtain API Key: Semantic Scholar API
+•	Instructions:
+o	Sign up for a free account.
+o	Access the API settings to generate a new API key.
+________________________________________
+8. CORE API (Open Access Research Papers)
+•	Link to Obtain API Key: CORE API
+•	Instructions:
+o	Register on the CORE platform.
+o	Navigate to the API section to generate a new API key.
+________________________________________
+9. IEEE Xplore API (Conference Papers)
+•	Link to Obtain API Key: IEEE Xplore API
+•	Instructions:
+o	Sign up or log in to IEEE.
+o	Request access to the Xplore API and generate an API key.
+________________________________________
+10. Twitter API (Social Media Data)
+•	Link to Obtain API Key: Twitter Developer Portal
+•	Instructions:
+o	Sign up for a Twitter Developer account.
+o	Create a new app in the developer portal.
+o	Generate API keys, access tokens, and secrets.
+
+4. Frontend Setup
+Step 1: Navigate to the Frontend Folder
+In the terminal, navigate to the frontend directory
+cd <extracted-folder>/frontend
+Step 2: Install Dependencies
+Install all required npm packages:
+npm install
+Step 3: Start the Frontend
+Run the React app:
+npm start
+•	The React app will start on http://localhost:3000.
+________________________________________
+
+Step 4. Testing the Project
+1.	Open http://localhost:3000 in a browser.
+2.	Perform a search query to test the backend and frontend integration.
+3.	Validate the responses and ensure all features (e.g., Wikipedia fetch, Reddit discussions, ChatGPT responses) are working correctly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+AFTER ALL SETUP:
+OPEN 2 COMMAND PROMPTS:
+IN 1ST COMMAND PROMPT: 
+	d:
+cd “Your path of backend file”                  e.g.: cd D:\IntelScope\backend
+env\Scripts\activate
+python app.py
+
+IN 2ND COMMAND PROMPT:
+D:
+cd “Your path of frontend file”                  e.g.: cd D:\IntelScope\frontend
+npm start
+then The React app will start on http://localhost:3000
+
+
+
+
